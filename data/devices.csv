@@ -1,0 +1,6 @@
+hostname,ip,os,site,role,type,manufacturer,serial,comment
+server01,192.168.10.10,Ubuntu 22.04,Lab,Server,Generic Server,Generic,SN-SRV-001,Web server
+server02,192.168.10.11,Ubuntu 20.04,Lab,Server,Generic Server,Generic,SN-SRV-002,Database server
+pc-morten,192.168.10.20,Windows 11,Lab,Workstation,Generic PC,Generic,SN-PC-001,Developer workstation
+laptop-test,192.168.10.21,Windows 10,Lab,Workstation,Generic Laptop,Generic,SN-LAP-001,Test laptop
+router01,192.168.10.1,RouterOS,Lab,Network,Generic Router,Generic,SN-RT-001,Main lab router

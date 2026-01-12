@@ -1,0 +1,6 @@
+hostname,interface,interface_type,ip
+server01,eth0,1000base-t,192.168.20.10/24
+server02,eth0,1000base-t,192.168.20.11/24
+pc-morten,eth0,1000base-t,192.168.10.20/24
+laptop-test,wlan0,ieee802.11ac,192.168.10.21/24
+router01,ge-0/0,1000base-t,192.168.10.1/24

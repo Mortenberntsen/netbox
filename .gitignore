@@ -1,0 +1,32 @@
+*.sql.gz
+.netbox
+.python-version
+docker-compose.override.yml
+*.pem
+configuration/*
+!configuration/configuration.py
+!configuration/extra.py
+configuration/ldap/*
+!configuration/ldap/extra.py
+!configuration/ldap/ldap_config.py
+!configuration/logging.py
+!configuration/plugins.py
+super-linter.log
+
+
+# Secrets
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Local NetBox data (Docker volumes)
+docker-data/
+volumes/
+netbox-postgres-data/
+netbox-redis-data/
+
+# OS
+.DS_Store
