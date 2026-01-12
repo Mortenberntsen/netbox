@@ -30,3 +30,5 @@ netbox-redis-data/
 
 # OS
 .DS_Store
+
+netbox-docker/

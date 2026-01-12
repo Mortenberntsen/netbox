@@ -13,8 +13,9 @@ if [ -z "$NETBOX_API_TOKEN" ]; then
   exit 1
 fi
 
-echo "🐳 Starter Docker"
-docker compose up -d
+echo "🐳 Forutsetter at NetBox allerede kjører"
+
+
 
 echo "⏳ Venter på NetBox API..."
 until curl -s http://localhost:8000/api/ > /dev/null; do

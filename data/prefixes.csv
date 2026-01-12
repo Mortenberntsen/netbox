@@ -1,3 +1,3 @@
-prefix,site,role,description
-192.168.10.0/24,Lab,Clients,Klientnett
-192.168.20.0/24,Lab,Servers,Servernett
+prefix,site,role
+192.168.10.0/24,Lab,Clients
+192.168.20.0/24,Lab,Servers

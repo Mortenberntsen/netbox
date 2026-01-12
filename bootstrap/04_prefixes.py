@@ -15,10 +15,16 @@ with open("data/prefixes.csv", newline="", encoding="utf-8") as f:
 
     for row in reader:
         site = nb.dcim.sites.get(slug=row["site"].lower())
-        role = nb.ipam.roles.get(slug=row["role"].lower())
+
+        role = nb.ipam.roles.get(name=row["role"])
+        if not role:
+            role = nb.ipam.roles.get(slug=row["role"].lower())
 
         if not site or not role:
-            print(f"❌ Mangler site/role for {row['prefix']} (site={row['site']}, role={row['role']})")
+            print(
+                f"❌ Mangler site/role for {row['prefix']} "
+                f"(site={row['site']}, role={row['role']})"
+            )
             continue
 
         existing = nb.ipam.prefixes.get(prefix=row["prefix"])
@@ -35,4 +41,3 @@ with open("data/prefixes.csv", newline="", encoding="utf-8") as f:
         )
 
         print(f"✔ Prefix opprettet: {row['prefix']}")
-
