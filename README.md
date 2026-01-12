@@ -22,6 +22,15 @@ git clone https://github.com/<brukernavn>/<repo>.git
 cd <repo>
 
 
+
+## Bootstrap
+
+```bash
+export NETBOX_API_TOKEN=<your_token>
+./bootstrap.sh
+
+
+
 ## ℹ️ Upstream-prosjekt
 
 Dette prosjektet bruker Docker-image fra:
