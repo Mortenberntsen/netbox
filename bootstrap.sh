@@ -25,10 +25,13 @@ done
 echo "✅ NetBox API er klar"
 
 python3 bootstrap/01_sites.py
+python3 bootstrap/07_vlans.py
 python3 bootstrap/02_device_roles.py
 python3 bootstrap/03_device_types.py
 python3 bootstrap/04_prefixes.py
 python3 bootstrap/05_devices.py
 python3 bootstrap/06_interfaces_ips.py
+
+
 
 echo "🎉 Bootstrap ferdig – NetBox er klar!"
